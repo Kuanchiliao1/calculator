@@ -1,0 +1,35 @@
+nav ul {
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.calculator-container {
+  max-width: 40rem;
+  border: solid pink 5px;
+  margin-inline: auto;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(6rem, 1fr));
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . equal" ". . . equal";
+}
+
+button {
+  padding: 20px 0;
+}
+
+button.equal {
+  grid-area: equal;
+}
+
+/*# sourceMappingURL=styles.css.map */
